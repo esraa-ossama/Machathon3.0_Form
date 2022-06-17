@@ -1,0 +1,209 @@
+body
+{ 
+    height: 100%;
+    /* font-family: "Open Sans", sans-serif; */
+    /* background-image: */
+
+    
+
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+*{
+
+	/* text-align:center; */
+	font-size: 18px; 
+  box-sizing: border-box;
+}
+#machathon{
+    font-family: 'IBM Plex Serif', serif;
+    color: white; 
+    float: left;
+}
+#logo{
+	float: left;
+	width:70px;
+	height:70px;
+}
+
+.content-checkbox {
+    display: grid;
+    /* justify-content: center; */
+ }
+
+ .box
+{
+  /* width: 300px; */
+  /* width: 100%; */
+  margin: 0 auto;
+  padding: 7px;
+  border-radius: 20px;
+  background-color: #eaab00; /* gold */
+  /* Single pixel data uri image http://jsfiddle.net/LPxrT/ 
+  /* background-image: gold, gold, white */
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),  url('data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),
+url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==');
+  background-repeat: no-repeat;
+  background-size: 0 2px, 0 100%, 0% 2px;
+  background-position: top center, top center, bottom center;
+  -webkit-animation: drawBorderFromCenter 4s;
+  
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes drawBorderFromCenter {
+    0% {
+      background-size: 0 2px, 0 0, 100% 100%;
+    }
+    20% {
+      background-size: 100% 2px, 100% 0, 100% 100%;
+    }
+    66%
+    {
+      background-size: 100% 2px, 100% 98%, 100% 100%;
+    }
+    99%
+    {
+      background-size: 100% 2px, 100% 98%, 0 2px;
+    }
+}
+.nameError, .emailError, .phoneError {
+  color:red;
+}
+
+
+
+.content
+{
+  background: white;
+  padding: 2em;
+
+}
+h4{
+  font-family: 'britannic-bold-regular', sans-serif;
+}
+p{
+    font-size: 15px;
+    /* text-align: center; */
+    font-family: 'britannic-bold-regular', sans-serif;
+    /* font-family: 'Times New Roman', Times, serif;
+    text-transform: lowercase; */
+}
+h4{
+  font-family: 'IBM Plex Serif', serif;
+
+}
+
+
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px #4c061b;
+    color: #4c061b;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+  }
+  .draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+  }
+  .draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+  }
+  .draw-border:hover {
+    color: #eaab00;
+  }
+  .draw-border:hover::before, .draw-border:hover::after {
+    border-color: #eaab00;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+  }
+  .draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+  }
+  .draw-border:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+  }
+  
+  .btn {
+    
+    float: right;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem "Roboto Slab", sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+  }
+  .btn:focus {
+    outline: 2px dotted hsl(44, 66%, 60%);
+  }
+  
+  @media screen and (min-width: 560px) {
+    
+    .box {
+      width:50%;
+    }
+}
+  @media screen and (max-width: 560px) {
+ 
+    .box {
+      width: 80%;
+    }
+}
+/* forms */
+@media screen and (min-width: 560px) {
+    
+  .box-form {
+    width:70%;
+  }
+}
+@media screen and (max-width: 560px) {
+
+  .box-form {
+    width: 85%;
+  }
+}
+/* button */
+@media screen and (min-width: 560px) {
+    
+  .btn {
+    width: 160px;
+   
+    font: 700 1.2rem "Roboto Slab", sans-serif;
+  }
+}
+@media screen and (max-width: 560px) {
+
+  .btn{
+    width: 160px;
+    /* font: 400 1.2rem "Roboto Slab", sans-serif; */
+    font-size:16px;
+  }
+}
+
+.navbar{
+  background-color: #4c061b00;
+}

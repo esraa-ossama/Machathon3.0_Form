@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Machathon 3.0 Form</title>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="./css/formcss.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&family=Playfair+Display+SC&display=swap"
+    rel="stylesheet">
+
+    <link rel="icon" href="stp_logo.png">
+</head>
+
+<body>
+
+  <!--nav bar and logo-->
+    
+  <nav class="navbar navbar-expand-lg navbar-dark  p-3">
+      
+    <div class="container-fluid" style="justify-content: flex-start">
+
+      <div class="ms-5 me-4">
+        <img src="stp_logo.png" id="logo">
+      </div> 
+
+      
+      <div class="">
+       
+           <h1 id="machathon" class="fs-1">Machathon 3.0</h1>
+       
+      </div>
+      <div class="col-lg-4 col-md-3 col-sm-0"></div>
+      
+    </div>
+     
+    
+  </nav>
+  <form style="text-align: start;" method="POST" action="connection.php">
+
+  
+   
+<!--main form-->
+    <section >
+
+      <div class="container" id="mainForm">
+        <br>
+        <div class="row align-items-center">
+         
+          <div class="box">
+            <div class="card mx-auto rounded  my-auto content" >
+              
+              <div class="container cocard-body">
+                <br>
+                <br>
+              
+                <div class="content-checkbox">
+                  <div>
+                    <h3 class="mb-4">Register as: </h2>
+                  </div>
+                
+                  <div class="form-check  mb-4 mt-1" style=" vertical-align: middle;">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label mb-2" for="flexRadioDefault1">
+                      Competitor
+                    </label>
+                    <p class="text-muted">To comepete in the Machathon as a team or individual</p>
+                  </div>
+                  <div class="form-check" style=" vertical-align: middle;">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label mb-2" for="flexRadioDefault2">
+                      Summit Attendee
+                    </label>
+                    <p class="text-muted">To attend the summit</p>
+                  </div>
+                </div>
+                <br>
+
+                  <div>
+                    <button type="button" class="btn  draw-border" id="firstCheckBoxBtn" >Next</button>
+                  </div>
+                
+              </div>
+              <br>
+            </div>
+
+          </div>
+        </div>
+       </div>     
+      
+          </section>      
+
+
+  
+
+ <!--expose-->
+    <section>
+
+      <div class="container"  id="expose">
+        <br>
+        <br>
+        <div class="row align-items-center" >
+         
+          <div class="box box-form">
+            <div class="card mx-auto rounded  my-auto content" style="text-align: start;">
+              <div style="width: 100%; height: 20px; border-bottom: 1px solid rgb(122, 121, 121); text-align: center">
+                <span style="font-size: 15px; background-color: white; padding: 0 10px;">
+                  Summit Attendee information
+                </span>
+              </div>
+              
+              
+              <div class="container cocard-body" style="text-align: start;">
+                  <br>
+                  <div style="text-align: start;">
+                    <div class="mb-3">
+                      <label  class="form-label">Name</label>
+                      <input type="name" name="name0" class="form-control exposereq" id="name">
+                      <div class="nameError"></div>
+                    </div>
+                    <div class="mb-3">
+                      <label  class="form-label">Phone Number</label>
+                      <input type="phone" name="phone0" class="form-control exposereq" id="phoneNum">
+                      <div class="phoneError"></div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" name="email0" class="form-control exposereq" id="email" aria-describedby="emailHelp" >
+                      <div class="emailError"></div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label  class="form-label">University</label>
+                      <select class="form-select nuiversity" name="university0">
+                        <option value=""></option>
+                        <option value="Cairo university">Cairo university</option>
+                        <option value="Ain shams University">Ain shams University</option>
+                        <option value="Helwan University">Helwan University</option>
+                        <option value="other">Other</option>
+                      </select> 
+                    </div>
+
+                    <div class="mb-3">
+                      <label  class="form-label uniNote">If other, please mention it</label>
+                      <input type="phone" name="university00" class="form-control uni" >
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label">Faculty</label>
+                      <input type="text" name="faculty0" class="form-control exposereq"  aria-describedby="emailHelp" >
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label">Department</label>
+                      <input type="text" name="department0" class="form-control exposereq" aria-describedby="emailHelp" >
+                      <p class="hide text-muted">Please type "undeclared" if not availabe</p>
+                    </div>
+
+                    <div class="mb-3">
+                      <label  class="form-label">Graduation Year</label>
+                      <select class="form-select exposereq" name="grad_year0">
+                        <option selected value=""></option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                      </select>
+                    </div>
+
+                    <div class="row">
+      
+                      <div >
+                        <button value="Submit" type="submit" name="attendee" id="exposeSubmit" class="btn ms-5 p-3 px-5 draw-border ">Submit</button>
+                      </div>
+      
+                    </div>
+                  </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <section>
+
+      <div class="container" id="compete">
+        <br>
+        <div class="row align-items-center">
+         
+          <div class="box">
+            <div class="card mx-auto rounded  my-auto content" >
+              
+              <div class="container cocard-body">
+                <br>
+                <div>
+                  <p class="fs-5 mb-4">Register as: </p>
+                </div>
+                <div class="content-checkbox">
+                
+                  <div class="form-check  mb-4 mt-1" style=" vertical-align: middle;">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                    <label class="form-check-label mb-2" for="flexRadioDefault1">
+                      An Individual
+                    </label>
+                    <p class="text-muted">Register as an individual and we assign you a team</p>
+                  </div>
+                  <div class="form-check" style=" vertical-align: middle;">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" >
+                    <label class="form-check-label mb-2" for="flexRadioDefault2">
+                     A Team
+                    </label>
+                    <p class="text-muted">Register as a team of 2 to 5</p>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label  class="form-label" id="hidden-panel1">Number of team members</label>
+                  <select class="form-select" id="membersNum" name="team_size">
+                    <option selected value=""></option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label  class="form-label" id="teamnamelabel" >Team name</label>
+                  <input type="text"  name="team_name" id="teamname" class="form-control">
+                </div>
+
+                
+                <br>
+
+              
+                <div class="container" style=" justify-content:flex-end;">
+                
+                  <div>
+                    <button type="button" class="btn  draw-border"  id="competeNextBtn" >Next</button>
+                  </div>
+
+                </div>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+
+   <br>
+
+     <!-- individual competetor section-->
+<section>
+
+  <div class="container" id="individualCompetetor">
+    <br>
+    <br>
+    <div class="row align-items-center" >
+     
+      <div class="box box-form">
+        
+        <div class="card mx-auto rounded  my-auto content" style="text-align: start;">
+          <div style="width: 100%; height: 20px; border-bottom: 1px solid rgb(122, 121, 121); text-align: center">
+            <span style="font-size: 15px; background-color: white; padding: 0 10px;">
+              Individual competetor information
+            </span>
+          </div>
+
+          <br>
+          
+          <div class="container cocard-body text" style="text-align: start;">
+              <br>
+              <div style="text-align: start;">
+                <div class="mb-3">
+                  <label  class="form-label">Name</label>
+                  <input type="name" name="name1" class="form-control individualreq"  id="indivName" >
+                  <div class="nameError"></div>
+                </div>
+                <div class="mb-3">
+                  <label  class="form-label">Phone Number</label>
+                  <input type="phone" name="phone1"  class="form-control individualreq" id="indivPhoneNum"  >
+                  <div class="phoneError"></div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" name="email1" class="form-control individualreq" id="indivEmail" aria-describedby="emailHelp" >
+                  <div class="emailError"></div>
+                </div>
+
+                <div class="mb-3">
+                  <label  class="form-label selectuni">University</label>
+                  <select class="form-select individualreq nuiversity" name="university1">
+                  <option value=""></option>
+                  <option value="Cairo university">Cairo university</option>
+                  <option value="Ain shams University">Ain shams University</option>
+                  <option value="Helwan University">Helwan University</option>
+                  <option value="other">Other</option>
+                      </select> 
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label  class="form-label uniNote" >If other, please mention it</label>
+                  <input type="text" name="university11" class="form-control uni" >
+                  
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Faculty</label>
+                  <input type="text" name="faculty1" class="form-control individualreq"  aria-describedby="emailHelp" >
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Department</label>
+                  <input type="text" name="department1" class="form-control individualreq" aria-describedby="emailHelp" >
+                  <p class="hide text-muted">Please type "undeclared" if not availabe</p>
+                </div>
+
+                <div class="mb-3">
+                  <label  class="form-label">Graduation Year</label>
+                  <select class="form-select individualreq" name="grad_year1">
+                    <option selected value=""></option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="formFile" class="form-label">Upload your cv</label>
+                  <input class="form-control individualreq" name="cv1" type="text" id="formFile">
+                  <p class="hide text-muted"> Google drive link with your CV inside of it. Make sure that the folder is set to "Anyone on the internet with this link can view". Your CV will be given to attending companies who will contact you at a latter time if they're interested.</p>
+                </div>
+
+                <div class="row">
+  
+                  <div>
+                    <button type="submit" name="individual" class="btn ms-5 p-3 px-5 draw-border"  id="individualSubmit">Submit</button>
+                  </div>
+
+                </div>
+  
+              </div>
+
+            
+            <br>
+          </div>
+        </div>
+
+      </div>
+
+      <br>
+
+    </div>
+    </div>
+
+  </section>
+
+  <!-- team leader section-->
+  <section>
+
+    <div class="container" id="teamLeader">
+      <br>
+      <br>
+      <div class="row align-items-center" >
+       
+        <div class="box box-form">
+          
+          <div class="card mx-auto rounded  my-auto content" style="text-align: start;">
+            <div style="width: 100%; height: 20px; border-bottom: 1px solid rgb(122, 121, 121); text-align: center">
+              <span style="font-size: 15px; background-color: white; padding: 0 10px;">
+                Team leader information
+              </span>
+            </div>
+            <br>
+            
+            <div class="container cocard-body" style="text-align: start;">
+                <br>
+                <div style="text-align: start;">
+                  <div class="mb-3">
+                    <label  class="form-label">Name</label>
+                    <input type="name" name="name" id="name1" class="form-control leaderreq">
+                    <div class="nameError"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label  class="form-label"  >Phone Number</label>
+                    <input type="phone"  name="phone" id="phoneNum1"  class="form-control leaderreq" >
+                    <div class="phoneError"></div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" name="email" class="form-control leaderreq" id="email1" aria-describedby="emailHelp" >
+                    <div class="emailError"></div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label  class="form-label">University</label>
+                    <select class="form-select leaderreq nuiversity" name="university">
+                    <option value=""></option>
+                    <option value="Cairo university">Cairo university</option>
+                    <option value="Ain shams University">Ain shams University</option>
+                    <option value="Helwan University">Helwan University</option>
+                    <option value="other">Other</option>
+                      </select> 
+                  </div>
+
+                  <div class="mb-3">
+                    <label  class="form-label uniNote">If other, please mention it</label>
+                    <input type="text" class="form-control uni" name="universityy" >
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Faculty</label>
+                    <input type="text" class="form-control leaderreq" name="faculty"  aria-describedby="emailHelp" >
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Department</label>
+                    <input type="text" name="department" class="form-control" aria-describedby="emailHelp" >
+                    <p class="hide text-muted">Please type "undeclared" if not availabe</p>
+                  </div>
+
+                  <div class="mb-3">
+                    <label  class="form-label">Graduation Year</label>
+                    <select class="form-select leaderreq" name="grad_year">
+                    <option selected value=""></option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                    </select>
+                  </div>
+
+                  <div class="mb-5">
+                    <label  class="form-label">Enter your CV URL</label>
+                    <input type="name" name="cv" class="form-control leaderreq" id="formFile">
+                    <p class="hide text-muted"> Google drive link with your CV inside of it. Make sure that the folder is set to "Anyone on the internet with this link can view". Your CV will be given to attending companies who will contact you at a latter time if they're interested.</p>
+                  </div>
+
+                  <div class="row">
+    
+                    <div>
+                      <button  type="button" class="btn ms-5 p-3 px-5 draw-border" id="teamLeaderNext" >Next</button>
+                    </div>
+    
+                  </div>
+                </div>
+
+              
+              <br>
+
+
+
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+      <br>
+
+    </div>
+
+  </section>
+
+    <!-- 2nd member section section-->
+<section>
+
+  <div class="container" id="secondMember">
+    <br>
+    <br>
+    <div class="row align-items-center" >
+     
+      <div class="box box-form">
+        
+        <div class="card mx-auto rounded  my-auto content" style="text-align: start;">
+          <div style="width: 100%; height: 20px; border-bottom: 1px solid rgb(122, 121, 121); text-align: center">
+            <span style="font-size: 15px; background-color: white; padding: 0 10px;">
+             Second team member information
+            </span>
+          </div>
+          <br>
+          
+          <div class="container cocard-body" style="text-align: start;">
+              <br>
+              <div style="text-align: start;">
+                <div class="mb-3">
+                  <label  class="form-label">Name</label>
+                  <input type="name"  name="name2" class="form-control secondreq" id="name2">
+                  <div class="nameError"></div>
+                </div>
+                <div class="mb-3">
+                  <label  class="form-label">Phone Number</label>
+                  <input type="phone" name="phone2" class="form-control secondreq" id="phoneNum2" >
+                  <div class="phoneError"></div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" name="email2" class="form-control secondreq"  id="email2" aria-describedby="emailHelp" >
+                  <div class="emailError"></div>
+                </div>
+
+                <div class="mb-3">
+                  <label  class="form-label selectuni">University</label>
+                  <select class="form-select secondreq nuiversity" name="university2">
+                  <option value=""></option>
+                        <option value="Cairo university">Cairo university</option>
+                        <option value="Ain shams University">Ain shams University</option>
+                        <option value="Helwan University">Helwan University</option>
+                        <option value="other">Other</option>
+                      </select> 
+                </div>
+
+                <div class="mb-3">
+                  <label  class="form-label uniNote">If other, please mention it</label>
+                  <input type="text" class="form-control uni" name="university22" >
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Faculty</label>
+                  <input type="text" name="faculty2" class="form-control secondreq"  aria-describedby="emailHelp" >
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Department</label>
+                  <input type="text" name="department2" class="form-control secondreq" aria-describedby="emailHelp" >
+                  <p class="hide text-muted">Please type "undeclared" if not availabe</p>
+                </div>
+
+                <div class="mb-3">
+                  <label  class="form-label">Graduation Year</label>
+                  <select class="form-select secondreq" name="grad_year2">
+                  <option selected value=""></option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                  </select>
+                </div>
+
+                <div class="mb-5">
+                  <label  class="form-label">Enter your CV URL</label>
+                  <input type="text" name="cv2" class="form-control secondreq"  id="formFile">
+                  <p class="hide text-muted"> Google drive link with your CV inside of it. Make sure that the folder is set to "Anyone on the internet with this link can view". Your CV will be given to attending companies who will contact you at a latter time if they're interested.</p>
+              
+                </div>
+
+                <div class="row">
+  
+                  <div >
+                    <button  type="button"  class="btn ms-5 p-3 px-5 draw-border" id="secondNext">Next</button>
+                  </div>
+
+                </div>
+              </div>
+            <br>
+              <br>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+      <br>
+
+    </div>
+
+  </section>
+
+  <!-- 3th member section section-->
+  <section>
+
+<div class="container" id="thirdMember">
+  <br>
+  <br>
+  
+  <div class="row align-items-center" >
+   
+    <div class="box box-form">
+      
+      <div class="card mx-auto rounded  my-auto content" style="text-align: start;">
+        <div style="width: 100%; height: 20px; border-bottom: 1px solid rgb(122, 121, 121); text-align: center">
+          <span style="font-size: 15px; background-color: white; padding: 0 10px;">
+           Third team member information
+          </span>
+        </div>
+        <br>
+        
+        <div class="container cocard-body text-lowercase " style="text-align: start;">
+            <br>
+              <div class="mb-3">
+                <label  class="form-label">name</label>
+                <input type="name" name="name3" class="form-control thirdreq" id="name3" >
+                <div class="nameError"></div>
+              </div>
+              <div class="mb-3">
+                <label  class="form-label">Phone Number</label>
+                <input type="phone" name="phone3" class="form-control  thirdreq" id="phoneNum3" >
+                <div class="phoneError"></div>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" name="email3" class="form-control  thirdreq" id="email3" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                <div class="emailError"></div>
+              </div>
+
+              <div class="mb-3">
+                <label  class="form-label">University</label>
+                <select class="form-select thirdreq nuiversity" name="university3">
+                <option value=""></option>
+                        <option value="Cairo university">Cairo university</option>
+                        <option value="Ain shams University">Ain shams University</option>
+                        <option value="Helwan University">Helwan University</option>
+                        <option value="other">Other</option>
+                      </select> 
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label  class="form-label  uniNote">If other, please mention it</label>
+                <input type="phone" class="form-control uni" name="university33" >
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Faculty</label>
+                <input type="text" name="faculty3" class="form-control thirdreq"  aria-describedby="emailHelp" >
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Department</label>
+                <input type="text" name="department3" class="form-control thirdreq" aria-describedby="emailHelp" >
+                <p class="hide text-muted">Please type "undeclared" if not availabe</p>
+              </div>
+
+              <div class="mb-3">
+                <label  class="form-label">Graduation Year</label>
+                <select class="form-select thirdreq" name="grad_year3">
+                <option selected value=""></option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="formFile" class="form-label">Upload your CV</label>
+                <input class="form-control thirdreq" name="cv3" type="text" id="formFile">
+                <p class="hide text-muted"> Google drive link with your CV inside of it. Make sure that the folder is set to "Anyone on the internet with this link can view". Your CV will be given to attending companies who will contact you at a latter time if they're interested.</p>
+              </div>
+
+              <div class="row">
+
+                <div >
+                  <button   type="button" class="btn ms-5 p-3 px-5 draw-border " id="thirdNext">Next</button>
+                </div>
+
+              </div>
+
+
+          
+          <br>
+          
+        
+          
+
+          
+        </div>
+
+      
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+  
+</div>
+
+</section>
+
+    <!-- 4th member section section-->
+    <section>
+
+<div class="container" id="fourthMember">
+  <br>
+  <br>
+  <div class="row align-items-center" >
+   
+    <div class="box  box-form" >
+      
+      <div class="card mx-auto rounded  my-auto content" style="text-align: start;">
+        <div style="width: 100%; height: 20px; border-bottom: 1px solid rgb(122, 121, 121); text-align: center">
+          <span style="font-size: 15px; background-color: white; padding: 0 10px;">
+           Fourth team member information
+          </span>
+        </div>
+        <br>
+        
+        <div class="container cocard-body text-lowercase " style="text-align: start;">
+            <br>
+              <div class="mb-3">
+                <label  class="form-label">name</label>
+                <input type="name" name="name4" class="form-control fourthreq" id="name4" >
+                <div class="nameError"></div>
+              </div>
+              <div class="mb-3">
+                <label  class="form-label">Phone Number</label>
+                <input type="phone" name="phone4" class="form-control fourthreq" id="phoneNum4" >
+                <div class="phoneError"></div>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" name="email4" class="form-control fourthreq" id="email4" aria-describedby="emailHelp" >
+                <div class="emailError"></div>
+              </div>
+
+              <div class="mb-3">
+                <label  class="form-label">University</label>
+                <select class="form-select ourthreq nuiversity" name="university4">
+                <option value=""></option>
+                        <option value="Cairo university">Cairo university</option>
+                        <option value="Ain shams University">Ain shams University</option>
+                        <option value="Helwan University">Helwan University</option>
+                        <option value="other">Other</option>
+                      </select> 
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label  class="form-label  uniNote">If other, please mention it</label>
+                <input type="phone" class="form-control uni" name="university44" >
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Faculty</label>
+                <input type="text" name="faculty4" class="form-control fourthreq"  aria-describedby="emailHelp" >
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Department</label>
+                <input type="text" name="department4" class="form-control fourthreq" aria-describedby="emailHelp" >
+                <p class="hide text-muted">Please type "undeclared" if not availabe</p>
+              </div>
+
+              <div class="mb-3">
+                <label  class="form-label">Graduation Year</label>
+                <select class="form-select fourthreq" name="grad_year4">
+                <option selected value=""></option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="formFile" class="form-label">Upload your CV</label>
+                <input class="form-control fourthreq" name="cv4" type="text" id="formFile">
+                <p class="hide text-muted"> Google drive link with your CV inside of it. Make sure that the folder is set to "Anyone on the internet with this link can view". Your CV will be given to attending companies who will contact you at a latter time if they're interested.</p>
+              </div>
+
+              <div class="row">
+
+                <div>
+                  <button  type="button" class="btn ms-5 p-3 px-5 draw-border " id="fourthNext">Next</button>
+                </div>
+
+              </div>
+
+          
+          <br>
+          
+        
+          
+
+          
+        </div>
+
+      
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+  
+</div>
+
+</section>
+
+  <!-- 5th member section section-->
+  <section>
+
+<div class="container"  id="lastMember">
+  <br>
+  <br>
+  <div class="row align-items-center" >
+   
+    <div class="box  box-form" >
+      
+      <div class="card mx-auto rounded  my-auto content" style="text-align: start;">
+        <div style="width: 100%; height: 20px; border-bottom: 1px solid rgb(122, 121, 121); text-align: center">
+          <span style="font-size: 15px; background-color: white; padding: 0 10px;">
+           Last team member information
+          </span>
+        </div>
+        <br>
+        
+        <div class="container cocard-body text-lowercase " style="text-align: start;">
+            <br>
+              <div class="mb-3">
+                <label  class="form-label">name</label>
+                <input type="name" name="name5" class="form-control fifthreq" id="name5" >
+                <div class="nameError"></div>
+              </div>
+              <div class="mb-3">
+                <label  class="form-label">Phone Number</label>
+                <input type="phone" name="phone5" class="form-control fifthreq" id="phoneNum5" >
+                <div class="phoneError"></div>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" name="email5" class="form-control fifthreq" id="email5" aria-describedby="emailHelp" >
+                <div class="emailError"></div>
+              </div>
+
+              <div class="mb-3">
+                <label  class="form-label ">University</label>
+                <select class="form-select fifthreq nuiversity" name="university5">
+                <option value=""></option>
+                        <option value="Cairo university">Cairo university</option>
+                        <option value="Ain shams University">Ain shams University</option>
+                        <option value="Helwan University">Helwan University</option>
+                        <option value="other">Other</option>
+                      </select> 
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label  class="form-label  uniNote">If other, please mention it</label>
+                <input type="phone" class="form-control uni" name="university55" >
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Faculty</label>
+                <input type="text" name="faculty5" class="form-control fifthreq"  aria-describedby="emailHelp" >
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Department</label>
+                <input type="text" name="department5" class="form-control fifthreq" aria-describedby="emailHelp" >
+                <p class="hide text-muted">Please type "undeclared" if not availabe</p>
+              </div>
+
+              <div class="mb-3">
+                <label  class="form-label">Graduation Year</label>
+                <select class="form-select fifthreq" name="grad_year5">
+                <option selected value=""></option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="formFile" class="form-label">Upload your cv</label>
+                <input class="form-control fifthreq" name="cv5" type="text" id="formFile">
+                <p class="hide text-muted"> Google drive link with your CV inside of it. Make sure that the folder is set to "Anyone on the internet with this link can view". Your CV will be given to attending companies who will contact you at a latter time if they're interested.</p>
+              </div>
+
+              <div class="row">
+
+                <div >
+                  <button type="submit" name="team_members" id="lastMemberSubmit" class="btn ms-5 p-3 px-5 draw-border ">Submit</button>
+                </div>
+
+              </div>          
+          <br>
+          
+        
+          
+
+          
+        </div>
+
+      
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+  
+</div>
+
+</section>
+
+</form>
+</body>
+<script src='style.js'></script>
+
+</html>
